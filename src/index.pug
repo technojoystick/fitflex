@@ -1,0 +1,242 @@
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		meta(name="description" content="Фитнес резинки поможет похудеть в домашних условиях. Закажите с доставкой по стране!")
+		link(rel="icon" href="../images/favicon.png" type="image/png")
+		title Купить фитнес резинки, инструкция, цена. Фитнес резинки - официальный сайт, фитнес резинки отзывы
+		link(rel='stylesheet' href='styles/main.css')
+		link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css")
+	body
+		.navigation
+		//- header
+		header.header
+			.header__line
+				.header__title.section
+					h1 Fit Flex
+					p Фитнес-резинки
+			.header__container
+				.header__container-bg
+				.header__desc.section
+					h4 Резинки для фитнеса 
+						small Укрепляют мышцы и сжигают жир!
+					a.btnf(href="#") Заказать со скидкой
+			.header__list
+				.section
+					ul
+						li 
+							b 100% латекс 
+							| обеспечивает равномерное натяжение
+						li
+							b Не теряют эластичность 
+							| при длительном использовании
+						li
+							b Не рвутся 
+							| даже при запредельных нагрузках
+		//- video
+		section.section
+			.video
+				.video__unit.video__unit_container
+					video(poster="../images/poster.jpg" controls)
+						source(src="../video/video.mp4" type="video/mp4")
+				.video__unit.video__unit_benefits
+					h2 Фитнес-резинка
+						small Поможет похудеть в домашних условиях
+					ul
+						li
+							span.benefits-li-icon.benefits-li-icon_one
+							span
+								b Правильная биомеханика 
+								| выполняемых упражнений не вредит скелетной мускулатуре и суставно-связочному аппарату
+						li
+							span.benefits-li-icon.benefits-li-icon_two
+							span
+								b Равномерная нагрузка 
+								| на всей траектории растяжения эспандера исключает «мертвые зоны». 100% движений идут на пользу
+						li
+							span.benefits-li-icon.benefits-li-icon_three
+							span
+								b Уменьшается пиковая нагрузка 
+								| , что позволяет увеличить тренировочный объем для эффективного жиросжигания				
+		//- exercises
+		section.exercises.section
+			.exercises__container
+				.exercises__desc
+					h4 Безопасность
+					p В отличие от свободных весов обеспечивает оптимальную тренировку ваших мышц при минимальной нагрузке на суставы и соединительную ткань, а также исключает возможность получения вывихов и растяжений
+				.exercises__slider
+					h4 Упражнения
+					#carouselSectionControls.carousel.slide(data-ride='carousel')
+						.carousel-inner
+							.carousel-item.active
+								img.d-block.w-100(src='../images/exercises1.jpg' alt='')
+							.carousel-item
+								img.d-block.w-100(src='../images/exercises2.jpg' alt='')
+							.carousel-item
+								img.d-block.w-100(src='../images/exercises3.jpg' alt='')
+						a.carousel-control-prev(href='#carouselSectionControls' role='button' data-slide='prev')
+							span.carousel-control-prev-icon(aria-hidden='true')
+							span.sr-only Previous
+						a.carousel-control-next(href='#carouselSectionControls' role='button' data-slide='next')
+							span.carousel-control-next-icon(aria-hidden='true')
+							span.sr-only Next
+		//- causes
+		section.causes
+			.causes__section.section
+				h2 6 причин
+					small Купить фитнес-резинки
+				.causes__list
+					ul
+						li
+							img(src="../images/cause1.jpg" alt="")
+							p Накачай ягодицы
+						li
+							img(src="../images/cause2.jpg" alt="")
+							p Сделай стройные ноги
+						li
+							img(src="../images/cause3.jpg" alt="")
+							p Накачай руки и плечи
+						li
+							img(src="../images/cause4.jpg" alt="")
+							p Сжигай калории
+						li
+							img(src="../images/cause5.jpg" alt="")
+							p Носи с собой
+						li
+							img(src="../images/cause6.jpg" alt="")
+							p Занимайся везде
+		//- order steps
+		section.steps
+			h2 Как заказать?
+			.steps__container.section
+				.steps__list
+					ul
+						li
+							span.steps__img
+								img(src="../images/buy1.png" alt="")
+							span.steps__text Вы оставляете заявку на нашем сайте
+						li
+							span.steps__img
+								img(src="../images/buy2.png" alt="")
+							span.steps__text Менеджер перезванивает для оформления заказа
+						li
+							span.steps__img
+								img(src="../images/buy3.png" alt="")
+							span.steps__text Мы отправляем Ваш заказ почтой в любой регион
+						li
+							span.steps__img
+								img(src="../images/buy4.png" alt="")
+							span.steps__text Вы оплачиваете заказ при получении
+		//- form
+		section.form
+			.form__timer
+				p.timer__title До конца акции осталось:
+				.timer__container
+					.timer
+						.timer__item
+							.count.hours
+								span 1
+								span 1
+							.text часов
+						.timer__item
+							.count.minutes
+								span 1
+								span 1
+							.text минут
+						.timer__item
+							.count.seconds
+								span 1
+								span 1
+							.text секунд
+			.form__container.section
+				form.js_form_submit
+					input(type='text' name="fio" placeholder='Введите Ваше имя' required).form__input
+					input(type='tel' name="phone" placeholder='Введите Ваш телефон' required).form__input.only_number
+					button(type='submit').form__submit.btnf.btnf_white.js_submit Заказать со скидкой
+		//- reviews
+		section.reviews
+			h2 Отзывы
+				small Покупателей
+			.reviews__container.section
+				.reviews__slider
+					#carouselReviewsControls.carousel.slide(data-ride='carousel')
+						.carousel-inner
+							.carousel-item.active
+								.review-item
+									.review-item__img
+										img(src='../images/reviewsSlide1.jpg' alt='First slide')
+									.review-item__info Евгения Самойлова
+									p Обычные махи превращаются в сложные упражнения, если задействовать утяжелитель. Заказала комплект из резинок полностью. Носить с собой удобно, благодаря мешку. Я чередую работу для разных групп мышц, чтобы проработать их тщательно. День ног, день рук. Те, кто тренируются, меня поймут.
+							.carousel-item
+								.review-item
+									.review-item__img
+										img(src='../images/reviewsSlide1.jpg' alt='First slide')
+									.review-item__info Ольга Гриненко
+									p Обычные махи превращаются в сложные упражнения, если задействовать утяжелитель. Заказала комплект из резинок полностью. Носить с собой удобно, благодаря мешку. Я чередую работу для разных групп мышц, чтобы проработать их тщательно. День ног, день рук. Те, кто тренируются, меня поймут.
+							.carousel-item
+								.review-item
+									.review-item__img
+										img(src='../images/reviewsSlide1.jpg' alt='First slide')
+									.review-item__info Мария Барабан
+									p Обычные махи превращаются в сложные упражнения, если задействовать утяжелитель. Заказала комплект из резинок полностью. Носить с собой удобно, благодаря мешку. Я чередую работу для разных групп мышц, чтобы проработать их тщательно. День ног, день рук. Те, кто тренируются, меня поймут.
+						a.carousel-control-prev(href='#carouselReviewsControls' role='button' data-slide='prev')
+							span.carousel-control-prev-icon(aria-hidden='true')
+							span.sr-only Previous
+						a.carousel-control-next(href='#carouselReviewsControls' role='button' data-slide='next')
+							span.carousel-control-next-icon(aria-hidden='true')
+							span.sr-only Next
+		//- offer
+		section.offer
+			.offer__body
+				.offer__bg
+				.offer__section.section
+					.offer__container
+						.offer__price
+							.offer-price-block
+								.offer-price-block__old 3380 руб.
+								.offer-price-block__text Цена со скидкой:
+								.offer-price-block__new 1690 руб.
+								a.btnf(href="#") Заказать со скидкой
+						.offer__logo
+							.offer__percent
+								h4 Резинки для фитнеса 
+									small Укрепляют мышцы и сжигают жир!
+							p.offer-percent Скидка
+								span -50%
+		//- form
+		section.form
+			.form__timer
+				p.timer__title До конца акции осталось:
+				.timer__container
+					.timer
+						.timer__item
+							.count.hours
+								span 1
+								span 1
+							.text часов
+						.timer__item
+							.count.minutes
+								span 1
+								span 1
+							.text минут
+						.timer__item
+							.count.seconds
+								span 1
+								span 1
+							.text секунд
+			.form__container.section
+				form.js_form_submit
+					input(type='text' name="fio" placeholder='Введите Ваше имя' required).form__input
+					input(type='tel' name="phone" placeholder='Введите Ваш телефон' required).form__input.only_number
+					button(type='submit').form__submit.btnf.btnf_white.js_submit Заказать со скидкой
+		//- footer
+		footer.footer.section
+			a(target="_blank" href="policy.html") Политика конфиденциальности
+			
+
+		script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
+		script(src='js/script.min.js')
+		//- script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js")
+		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js")
+		
