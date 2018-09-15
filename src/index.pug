@@ -6,8 +6,8 @@ html(lang="ru-RU")
 		meta(name="description" content="Фитнес резинки поможет похудеть в домашних условиях. Закажите с доставкой по стране!")
 		link(rel="icon" href="../images/favicon.png" type="image/png")
 		title Купить фитнес резинки, инструкция, цена. Фитнес резинки - официальный сайт, фитнес резинки отзывы
-		link(rel='stylesheet' href='styles/main.css')
 		link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css")
+		link(rel='stylesheet' href='styles/main.css')
 	body
 		.navigation
 		//- header
@@ -17,6 +17,10 @@ html(lang="ru-RU")
 					h1 Fit Flex
 					p Фитнес-резинки
 			.header__container
+				.header__container-inner
+					.header__video
+						video(poster="../images/poster.jpg" autoplay muted loop)
+							source(src="../video/band_loop_workout.mp4" type="video/mp4")
 				.header__container-bg
 				.header__desc.section
 					h4 Резинки для фитнеса 
